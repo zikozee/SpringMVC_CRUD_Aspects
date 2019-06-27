@@ -1,0 +1,33 @@
+PREP>>	
+	Properties >> web project settings>> change context root :== to the the project name
+	i.e we changed web-customer-tracker >>>> web-customer-tracker-aop
+
+1. Add AspectJ JAR file to web project
+2. Enable AspectJ Auto proxy
+	XML config
+		Setup NameSpaces
+  			copy ,paste and rename this >>>> xmlns:mvc="http://www.springframework.org/schema/mvc"
+  			to >>> xmlns:aop="http://www.springframework.org/schema/aop"
+  
+  		Setup Schemas
+  		and this >>
+  			 http://www.springframework.org/schema/mvc
+			http://www.springframework.org/schema/mvc/spring-mvc.xsd
+	
+			to >>>> http://www.springframework.org/schema/aop
+					http://www.springframework.org/schema/mvc/spring-aop.xsd"		
+			
+					then add AspectJ autoProxy support for AOP 
+						<aop:aspectj-autoproxy />    ===>>  for Processing @Aspect classes
+					ALL in the spring-mvc-crud-demo-servlet.xml  -----------*********>>>>>>>>>
+	PURE JAVA
+		place this @EnableAspectJAutoProxy on our java config file
+		place this @Configuration for 
+		place @ComponentScan("Base Package") to enable recurse through sub-directories
+		CHECK Spring-demo-aop >>>com.luv2code.aopdemo>>>DemoConfig.java for implementation
+		
+3. Create Aspect
+	1. Add Logging Support
+	2. Setup up pointcut declaration (controller, service, dao i.e package that have method that changes something in the program)
+	3. Add @Before Advice
+	4. Add @AfterReturning advice
