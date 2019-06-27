@@ -1,6 +1,6 @@
-package com.luv2code.springdemo.service;
+package com.zikozee.SpringMVC.service;
 
-import com.luv2code.springdemo.entity.Customer;
+import com.zikozee.SpringMVC.entity.Customer;
 
 import java.util.List;
 

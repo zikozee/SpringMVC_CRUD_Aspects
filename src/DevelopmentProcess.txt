@@ -24,7 +24,7 @@ PREP>>
 		place this @EnableAspectJAutoProxy on our java config file
 		place this @Configuration for 
 		place @ComponentScan("Base Package") to enable recurse through sub-directories
-		CHECK Spring-demo-aop >>>com.luv2code.aopdemo>>>DemoConfig.java for implementation
+		CHECK Spring-demo-aop >>>com.zikozee.aopdemo>>>DemoConfig.java for implementation
 		
 3. Create Aspect
 	1. Add Logging Support

@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.entity;
+package com.zikozee.SpringMVC.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

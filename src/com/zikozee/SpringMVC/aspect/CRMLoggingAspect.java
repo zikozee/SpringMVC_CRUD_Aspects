@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.aspect;
+package com.zikozee.SpringMVC.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -17,14 +17,14 @@ public class CRMLoggingAspect {
 	private Logger myLogger  = Logger.getLogger(getClass().getName());
 	
 	// setup pointcut declaration
-	@Pointcut("execution(* com.luv2code.springdemo.controller.*.*(..))")
+	@Pointcut("execution(* com.zikozee.SpringMVC.controller.*.*(..))")
 	private void forControllerPackage() {}
 	
 	// do the same for service and dao
-	@Pointcut("execution(* com.luv2code.springdemo.service.*.*(..))")
+	@Pointcut("execution(* com.zikozee.SpringMVC.service.*.*(..))")
 	private void forServicePackage() {}
 	
-	@Pointcut("execution(* com.luv2code.springdemo.dao.*.*(..))")
+	@Pointcut("execution(* com.zikozee.SpringMVC.dao.*.*(..))")
 	private void forDaoPackage() {}
 	
 	//pointcut combo

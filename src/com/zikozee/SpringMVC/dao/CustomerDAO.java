@@ -1,6 +1,6 @@
-package com.luv2code.springdemo.dao;
+package com.zikozee.SpringMVC.dao;
 
-import com.luv2code.springdemo.entity.Customer;
+import com.zikozee.SpringMVC.entity.Customer;
 
 import java.util.List;
 
